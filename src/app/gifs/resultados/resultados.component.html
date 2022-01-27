@@ -1,0 +1,24 @@
+<div class="container-fluid content-row">
+
+    <div class="row">
+        <div *ngFor="let gif of resultados" class="col-md-3 col-sm-4 m-1 animate__animated animate__fadeIn" >
+
+            <div class="card h-100">
+
+                <img class="card-img-top" [src]=" gif.images.downsized_medium.url" [alt]="gif.title" srcset="">
+
+                <div class="card-body">
+
+                    <p class="card-text">
+
+                        {{ gif.title }}
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
